@@ -19,8 +19,7 @@ export const prLinkedIssue = {
 		name: "pr-linked-issue",
 	},
 	async pullRequest(context, entity) {
-		// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-		const response = (await context.octokit.graphql(
+		const response = await context.octokit.graphql<ClosingIssuesResponse>(
 			`
 				query closingIssues($id: Int!, $owner: String!, $repository: String!) {
 					repository(owner: $owner, name: $repository) {
@@ -39,7 +38,7 @@ export const prLinkedIssue = {
 				owner: context.locator.owner,
 				repository: context.locator.repository,
 			},
-		)) as ClosingIssuesResponse;
+		);
 
 		if (response.repository.pullRequest.closingIssuesReferences.nodes.length) {
 			return;

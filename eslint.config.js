@@ -49,6 +49,8 @@ export default tseslint.config(
 			},
 		},
 		rules: {
+			"n/no-missing-import": "off",
+
 			// Stylistic concerns that don't interfere with Prettier
 			"logical-assignment-operators": [
 				"error",

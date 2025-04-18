@@ -13,6 +13,8 @@ export interface CommentEntity {
 
 export type Entity = CommentEntity | IssueEntity | PullRequestEntity;
 
+export type EntityType = Entity["type"];
+
 export type IssueData =
 	RestEndpointMethodTypes["issues"]["get"]["response"]["data"];
 

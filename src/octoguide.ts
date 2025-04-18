@@ -2,6 +2,7 @@ import { octokitFromAuth } from "octokit-from-auth";
 
 import type { RuleContext, RuleReport } from "./types/rules.js";
 
+import { runRuleOnEntity } from "./execution/runRuleOnEntity.js";
 import { resolveLintable } from "./resolvers/resolveEntity.js";
 import { rules } from "./rules/index.js";
 
@@ -36,19 +37,7 @@ export async function runOctoGuide({ githubToken, url }: OctoGuideSettings) {
 				},
 			};
 
-			switch (entity.type) {
-				case "comment":
-					await rule.comment?.(context, entity);
-					break;
-
-				case "issue":
-					await rule.issue?.(context, entity);
-					break;
-
-				case "pull_request":
-					await rule.pullRequest?.(context, entity);
-					break;
-			}
+			await runRuleOnEntity(context, rule, entity);
 		}),
 	);
 

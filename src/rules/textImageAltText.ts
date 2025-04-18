@@ -19,10 +19,6 @@ export const textImageAltText = {
 } satisfies Rule;
 
 function checkEntity(context: RuleContext, entity: Entity) {
-	if (!entity.user) {
-		return;
-	}
-
 	const content = entity.data.body?.trim();
 	if (!content) {
 		return undefined;

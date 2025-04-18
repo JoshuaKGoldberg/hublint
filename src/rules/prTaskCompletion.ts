@@ -21,8 +21,7 @@ export const prTaskCompletion = {
 		if (
 			!templateResponse ||
 			Array.isArray(templateResponse.data) ||
-			templateResponse.data.type !== "file" ||
-			!templateResponse.data.content
+			templateResponse.data.type !== "file"
 		) {
 			return;
 		}

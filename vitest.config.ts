@@ -9,7 +9,6 @@ export default defineConfig({
 			reporter: ["html", "lcov"],
 		},
 		exclude: ["lib", "node_modules"],
-		passWithNoTests: true,
 		setupFiles: ["console-fail-test/setup"],
 	},
 });

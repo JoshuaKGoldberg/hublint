@@ -17,6 +17,15 @@
       "login": "JoshuaKGoldberg",
       "name": "Josh Goldberg ✨",
       "profile": "http://www.joshuakgoldberg.com"
+    },
+    {
+      "login": "phryneas",
+      "name": "Lenz Weber-Tronic",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4282439?v=4",
+      "profile": "https://phryneas.de",
+      "contributions": [
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -24,7 +33,7 @@
   "files": [
     "README.md"
   ],
-  "projectName": "octoguide",
+  "projectName": "OctoGuide",
   "projectOwner": "JoshuaKGoldberg",
   "repoType": "github",
   "commitConvention": "angular"

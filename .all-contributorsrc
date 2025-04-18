@@ -12,7 +12,8 @@
         "infra",
         "maintenance",
         "projectManagement",
-        "tool"
+        "tool",
+        "test"
       ],
       "login": "JoshuaKGoldberg",
       "name": "Josh Goldberg ✨",
@@ -24,7 +25,7 @@
   "files": [
     "README.md"
   ],
-  "projectName": "octoguide",
+  "projectName": "OctoGuide",
   "projectOwner": "JoshuaKGoldberg",
   "repoType": "github",
   "commitConvention": "angular"

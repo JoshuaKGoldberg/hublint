@@ -112,8 +112,8 @@ importers:
         specifier: 15.5.0
         version: 15.5.0
       markdownlint:
-        specifier: 0.33.0
-        version: 0.33.0
+        specifier: 0.37.4
+        version: 0.37.4
       markdownlint-cli:
         specifier: 0.44.0
         version: 0.44.0
@@ -2462,10 +2462,6 @@ packages:
     resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
     engines: {node: '>=10'}
 
-  markdown-it@14.0.0:
-    resolution: {integrity: sha512-seFjF0FIcPt4P9U39Bq1JYblX0KZCjDLFFQPHpL5AzHpqPEKtosxmdq/LTVZnjfH7tjt9BxStm+wXcDBNuYmzw==}
-    hasBin: true
-
   markdown-it@14.1.0:
     resolution: {integrity: sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==}
     hasBin: true
@@ -2475,16 +2471,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  markdownlint-micromark@0.1.8:
-    resolution: {integrity: sha512-1ouYkMRo9/6gou9gObuMDnvZM8jC/ly3QCFQyoSPCS2XV1ZClU0xpKbL1Ar3bWWRT1RnBZkWUEiNKrI2CwiBQA==}
-    engines: {node: '>=16'}
-
   markdownlint-rule-helpers@0.28.0:
     resolution: {integrity: sha512-qBOQWESmc/yTNe6nVu3D7AU7pFg2e7T5svbQI+S7rocw4g4xZ3GHerKPl0Rw0cx4fnAViEdzoAcbrxeuXUCEAA==}
-    engines: {node: '>=18'}
-
-  markdownlint@0.33.0:
-    resolution: {integrity: sha512-4lbtT14A3m0LPX1WS/3d1m7Blg+ZwiLq36WvjQqFGsX3Gik99NV+VXp/PW3n+Q62xyPdbvGOCfjPqjW+/SKMig==}
     engines: {node: '>=18'}
 
   markdownlint@0.37.4:
@@ -5796,15 +5784,6 @@ snapshots:
     dependencies:
       semver: 7.7.1
 
-  markdown-it@14.0.0:
-    dependencies:
-      argparse: 2.0.1
-      entities: 4.5.0
-      linkify-it: 5.0.0
-      mdurl: 2.0.0
-      punycode.js: 2.3.1
-      uc.micro: 2.1.0
-
   markdown-it@14.1.0:
     dependencies:
       argparse: 2.0.1
@@ -5829,14 +5808,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  markdownlint-micromark@0.1.8: {}
-
   markdownlint-rule-helpers@0.28.0: {}
-
-  markdownlint@0.33.0:
-    dependencies:
-      markdown-it: 14.0.0
-      markdownlint-micromark: 0.1.8
 
   markdownlint@0.37.4:
     dependencies:
